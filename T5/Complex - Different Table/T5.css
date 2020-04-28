@@ -1,0 +1,109 @@
+body {
+    background: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#mainDiv {
+    background: gainsboro;
+    border: 1px solid black;
+    width: 1000px;
+    height: 570px;
+    margin: auto;
+}
+
+#field1Div, #field2Div {
+    border: 1px solid rgb(28, 182, 8);
+    width: 400px;
+    height: 400px;
+    padding: 2px;
+    margin: 30px;
+    margin-left: 53px;
+    display: inline-block;
+}
+
+#buttonDiv {
+    height: 50px;
+    width: 400px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#counterDiv {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#tweezers, #bomb, #start1, #start2, #end, #current1, #current2, #path, #explosion_simple {
+    border: 1px solid rgb(28, 182, 8);
+    width: 94px;
+    height: 94px;
+    margin: 2px;
+    display: inline-block;
+}
+
+#bombs {
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+#players {
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+#timerDiv {
+    margin-top: 10px;
+    width: auto;
+}
+
+#tweezers {
+    background-image: url('resources/img/tweezers.png');
+    background-repeat: no-repeat;
+}
+
+#bomb {
+    background-image: url('resources/img/mine.png');
+    background-repeat: no-repeat;
+}
+
+#end {
+    background-image: url('resources/img/shelter.png');
+    background-repeat: no-repeat;
+}
+
+#current1 {
+    background-image: url('resources/img/guy.png');
+    background-repeat: no-repeat;
+}
+
+#current2 {
+    background-image: url('resources/img/guy2.png');
+    background-repeat: no-repeat;
+}
+
+#path {
+    background-image: url('resources/img/terrain.png');
+    background-repeat: no-repeat;
+}
+
+#explosion_simple {
+    background-image: url('resources/img/explosion_simple.png');
+    background-repeat: no-repeat;
+}
+
+#startButton, #giveupButton {
+    width: 50%;
+    display: inline-block;
+}
+
+#labelPlayers {
+    margin-left: 95px;
+    margin-right: 10px;
+}
+
+#labelBombs {
+    margin-right: 10px;
+}

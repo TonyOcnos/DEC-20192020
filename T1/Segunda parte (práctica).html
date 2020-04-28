@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>T1 - Ejercicio práctico 1-</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+</head>
+    
+<body>
+    <h1>Ejercicio de lectura y escritura</h1>
+    
+<script type="text/javascript">
+    
+     var nombre
+     var numero1 , resultado1 
+     var numero2, numero3, resultado2
+ 
+    // Pregunto por el nombre para mostrarlo en pantalla una vez introducidos todos los datos
+    nombre = window.prompt("(PARTE1)Hola, ¿Cuál es tu nombre?");
+    document.write("(E1)Hola " + nombre + ", vamos a mostrar los distintos ejercicios realizados..." + "<br><br>")
+    
+    
+    // Pregunto por un número para obtener la tabla de multiplicar de dicho número
+    numero = window.prompt("(PARTE2)Introduce un número para obtener la tabla de multiplicar:")
+    
+    // Realización de la multiplicación mediante bucle FOR
+    document.write("<b>(E2)Esto es mediante un bucle FOR</b><br>")
+    
+    for(var multi=0; multi<10; multi++)
+        
+    {
+        resultado = numero * multi;
+        document.write(numero + "X" + multi + "=" + resultado + "<br>")
+    }
+    
+    // Realización de la multiplicación mediante bucle WHILE
+    document.write("<br><b>(E2)Y esto es mediante un bucle WHILE</b><br>")
+    
+    var multi = 0
+    
+    while(multi != 10)
+    {
+        resultado = numero * multi;
+        document.write(numero + "X" + multi + "=" + resultado + "<br>")
+        multi++
+    }
+    
+    // Pregunto por un dividendo para realizar la división del siguiente ejercicio
+    numero2 = window.prompt("(PARTE3)Seleccione un dividendo para la división:")
+    
+    // Comprobación de que el número introducido no es 0 y muestro alerta de ser así
+    while (numero2==0)
+    {
+        alert("¡El dividendo no puede ser 0!")
+        numero2 = window.prompt("Seleccione un dividendo que no sea 0")
+    }
+    
+    // Pregunto por un divisor para realizar la división del siguiente ejercicio
+    numero3 = window.prompt("(PARTE3)Seleccione un divisor:")
+    
+    // Comprobación de que el número introducido no es 0 y muestro alerta de ser así
+    while (numero3==0)
+    {
+        alert("¡El divisor no puede ser 0!")
+        numero3 = window.prompt("Seleccione un divisor que no sea 0:")
+    }
+    
+    // Realización de la división y posterior muestra en pantalla
+    resultado2 = numero2 / numero3;
+    document.write("<br><b>(E3)El resultado de su division es:</b><br>" + numero2 + "/" + numero3 + "=" + resultado2)
+  
+</script>
+</body>
+</html>

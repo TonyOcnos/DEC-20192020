@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+Alumno: Antonio Manuel Montes Martínez
+Tema: T4 - Validación de formularios
+Apartado: 1
+-->
+
+<html>
+	<head>
+		<title>E2. Competici&oacute;n</title>
+		<link rel="stylesheet" href="style5.css" />
+		<script src="formulario5.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<fieldset>
+		<legend>Competici&oacute;n</legend>
+			<form name="formulario-competicion" id="formulario-competicion" action="http://www.google.es" method="get">
+				<label for="nombre">Competición:</label>
+				<input type="text" name="nombre" id="nombre" pattern="^[A-z0-9áéíóú]*((\s)*[A-z0-9áéíóú])+$" maxlength="40" minlength="6" required>
+				<label for="descripcion">Descripción:</label>
+				<textarea col="500" rows="6" name="descripcion" id="descripcion" pattern="^[A-z0-9áéíóú]*((\s)*[A-z0-9áéíóú])+$" maxlength="1024" minlength="1" required></textarea>
+				<!--Ya que estamos con formularios, quería probar otro tipo de input, en este caso el input number con un min y max -->
+				<label for="participantes">Número de participantes:</label>
+				<input type="number" name="participantes" id="participantes" min="2" max="100" required><br>
+				<label for="arma">Seleccione arma:</label>
+				<input list="arma" id="armamento" required>
+				<datalist id="arma">
+					<option value="Arco">
+					<option value="Alfanje">
+					<option value="Ballesta">
+					<option value="Espada bastarda">
+					<option value="Espada cruzada">
+					<option value="Gladius">
+					<option value="Lanza">
+					<option value="Cimitarra">
+					<option value="BLucero del alba">
+					<option value="Garrote">
+				</datalist>
+				<input type="submit" name="enviar" id="enviar" value="Enviar" />
+				<input type="reset" name="reset" id="reset" value="Reset" />
+			</form>
+		</fieldset>
+		<div id="contenedor-res">
+			<div id="resultado"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> E1. Hor&oacute;scopo maya</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--Aquí cargamos el archivo js con nuestro código. Al tratarse de un único archivo lo podemos cargar en el head,
+		pero de tratarse de más archivos, lo recomendado es hacerlo al final del body, para que no tengamos problemas en 
+		cargar el archivo html-->
+		<script type="text/javascript" src="1.js"></script>						
+	
+	</head>
+	<body>
+		<p>
+		Ejercicio 1. Hor&oacute;scopo maya
+		<br>
+		</p>
+		
+		<!--Aquí creamos un objeto botón para una vez pulsado ejecute nuestro script desde el archivo js que ya está cargado-->
+		<button type="button" onclick="horoscopo()">Click para introducir fecha...</button>
+		
+		<br><br>
+		</form>
+		
+		<!--Creación del frame sobre el que cargaremos las páginas del horóscopo maya-->
+		<iframe height=400 width=400 frameborder=1 name="marco" style=""></></iframe>
+		
+		<br><br>
+		<button type="button" onclick="window.close()" id="cerrar">Pulse para cerrar</button>
+	</body>
+</html>
+

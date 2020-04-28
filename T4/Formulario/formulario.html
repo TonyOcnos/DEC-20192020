@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+Alumno: Antonio Manuel Montes Martínez
+Tema: T4 - Validación de formularios
+Apartado: 1
+-->
+
+<html>
+	<head>
+		<title>E1. Inscripci&oacute;n de caballero</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="formulario.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<fieldset>
+		<legend>Inscripci&oacute;n de caballero</legend>
+			<form name="formulario-caballero" id="formulario-caballero" action="http://www.google.es" method="get">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" />
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" name="apellidos" id="apellidos" />
+				<label for="contraseña">Contraseña:</label>
+				<input type="password" name="contraseña" id="contraseña" />
+				<label for="contraseña-ver">Verifique contraseña:</label>
+				<input type="password" name="contraseña-ver" id="contraseña-ver" />
+				<label for="nacionalidad">Seleccione nacionalidad:</label>
+				<select name="nacionalidad" id="nacionalidad">
+					<option value="CAS">Castilla</option>
+					<option value="GAL">Galicia</option>
+					<option value="ARG">Aragón</option>
+					<option value="CAL">Califato de Córdoba</option>
+					<option value="GRA">Reino de Granada</option>
+					<option value="FRA">Francia</option>
+					<option value="ING">Inglaterra</option>
+					<option value="SAC">Sacro Imperio Romano-Germánico</option>
+					<option value="BRE">Bretaña</option>
+					<option value="BIZ">Imperio Bizantino</option>
+					<option value="FAT">Califato Fatimi</option>
+					<option value="MAM">Sultanato Mameluco</option>
+					<option value="EGP">Sultanato Ayubí de Egipto y Siria</option>
+				</select>
+				<input type="submit" name="enviar" id="enviar" value="Enviar" />
+				<input type="reset" name="reset" id="reset" value="Reset" />
+				<input type="button" name="borrar" id="borrar" value="Borrar" />
+			</form>
+		</fieldset>
+		<div id="contenedor-res">
+			<div id="resultado"></div>
+		</div>
+	</body>
+</html>

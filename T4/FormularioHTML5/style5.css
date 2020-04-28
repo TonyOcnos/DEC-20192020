@@ -1,0 +1,89 @@
+/*
+Alumno: Antonio Manuel Montes Martínez
+Tema: T4 - Validación de formularios
+Apartado: 1
+*/
+
+#contenedor {
+	width: auto;
+	height: 75px;
+	display: flex;
+	padding-top: 60px;
+}
+
+#caballero {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	background: grey;
+	border-left-style: solid;
+	border-left-color: black;
+	border-left-width: 5px;
+}
+
+#competicion {
+	width: 50%;
+	height: 100%;
+	float: right;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	background: grey;
+	border-left-style: solid;
+	border-left-color: black;
+	border-left-width: 5px;
+	border-right-style: solid;
+	border-right-color: black;
+	border-right-width: 5px;
+}
+
+.enlace {
+	font-family: "Calibri";
+	font-size: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+#caballero:hover, #competicion:hover {
+	background: black;
+}
+
+#formulario-competicion {
+	width: 200px;
+}
+
+label, input {
+	margin-bottom: 10px;
+}
+
+#enviar, #reset {
+	margin: 10px 5px 5px 5px;
+}
+
+.error {
+	background: red;
+}
+
+.pass {
+	background: green;
+}
+
+.focus {
+	background: yellow;
+}
+
+legend {
+	font-weight: bold;
+}
+
+fieldset {
+	width: 230px;
+}
+
+#contenedor-res {
+	width: 400px;
+	margin-top: 20px;
+	height: auto;
+}

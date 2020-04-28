@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proyecto Centuria</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="centuria.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+	    <div id="general">
+			<div id="side1">
+				<div id="centuria">
+					<div class="button-menu"><h1>Menu</h1>
+						<button id="create-centuria" onclick="newCenturia()">Create Centuria</button><br>
+						<button id="remove-infante" onclick="removeInf()">Remove infante</button><br><br>
+						<button id="create-and-remove-centurion" onclick="newCenturion()">Create and replace centurión</button><br>
+						<button id="order" onclick="centurion1.gritar()">Order</button><br>
+					</div>
+					<div class="info">
+						<div class="title">
+							<table id="tabla1">
+								<tr id="title-row">
+									<th><h1><u>Centuria</u></h1></th>
+									<th id="name"></th>
+									<th id="total"></th>
+									<th id="centurion"></th>	
+								</tr>
+							</table>
+						</div>
+						<div class="box">
+							<div id="cuadro-centuria">
+								<table id="list1">
+									<tr class="cabecera">
+										<th><u>INDEX</u></th>
+										<th><u>Nombre</u></th>
+										<th><u>Edad</u></th>
+										<th><u>Altura (cm)</u></th>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div id="order"></div>
+					</div>
+				</div>
+			</div>
+			<div id="side2">
+				<div id="reserva">
+					<div class="button-menu"><h1>Menu</h1>
+						<button id="create-infante" onclick="newInfante()">Add infante</button><br>
+						<button id="asign-infante" onclick="assignInf()">Asign Infante</button><br>
+						<button id="retirerment" onclick="retireInf()">Retire Infante</button><br>
+						<button id="initialize" onclick="initialize()">Initialize Reserva</button><br>
+					</div>
+					<div class="info">
+						<div class="title">
+							<table>
+								<tr>
+									<th><h1><u>Reserva</u></h1></th>
+									<th id="total"></th>
+								</tr>
+							</table>
+						<div class="box">
+							<div id="cuadro-reserva">
+								<table id="list2">
+									<tr class="cabecera">
+										<th><u>INDEX</u></th>
+										<th><u>Nombre</u></th>
+										<th><u>Edad</u></th>
+										<th><u>Altura (cm)</u></th>
+									</tr>
+								</table>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer>
+			<div id="instructions">
+				<h1>· Instrucciones sobre la creación de una centuria a través de una reserva de infantes</h1>
+				<h3>-Podemos empezar creando una centuria asignándole los campos que queramos (tener en cuenta que para campos vacíos se pondra "-") mediante el botón <u>CREATE CENTURIA</u>.<br><br>
+				-También podemos crear una lista predefinida de infantes con <u>INITIALIZE RESERVA</u> o bien ir creándolos uno a uno mediante <u>ADD INFANTE</u>.<br><br>
+				-Los botones se irán poniéndo disponibles según ejecutemos acciones.<br><br>
+				-Una vez creado y asignado el centurión a la centuria con el botón <u>CREATE AND REPLACE CENTURIÓN</u>, podremos comandarle que grite una orden (de manera random) en latín mediante <u>ORDER</u>.<br><br>
+				-Podremos ir asignando (mediante el nombre) infantes a la centuria con el botón <u>ASIGN INFANTE</u>.<br><br>
+				-También podemos jubilar a infantes de la reserva (siempre que la edad lo permita) mediante <u>RETIRE INFANTE</u>.<br><br>
+				-De igual forma podemos ir dando de baja de la centuria y mandando a soldados a la reserva mediante el botón <u>REMOVE INFANTE</u>.<br>
+				</h3>
+			</div>
+		</footer>
+	</body>
+</html>	

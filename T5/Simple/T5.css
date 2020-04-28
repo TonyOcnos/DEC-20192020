@@ -1,0 +1,56 @@
+#mainDiv {
+    border: 1px solid rgb(28, 182, 8);
+    width: 400px;
+    height: 400px;
+    padding: 2px;
+}
+
+.tiles {
+    border: 1px solid rgb(28, 182, 8);
+    width: 94px;
+    height: 94px;
+    margin: 2px;
+    display: inline-block;
+}
+
+#bomb {
+    background-image: url('resources/img/mine.png');
+    background-repeat: no-repeat;
+}
+
+#start {
+    background-image: url('resources/img/guy.png');
+    background-repeat: no-repeat;
+}
+
+#end {
+    background-image: url('resources/img/shelter.png');
+    background-repeat: no-repeat;
+}
+
+#current {
+    background-image: url('resources/img/guy.png');
+    background-repeat: no-repeat;
+}
+
+#path {
+    background-image: url('resources/img/terrain.png');
+    background-repeat: no-repeat;
+}
+
+#explosion_simple {
+    background-image: url('resources/img/explosion_simple.png');
+    background-repeat: no-repeat;
+}
+
+#buttonDiv {
+    height: 50px;
+    width: 400px;
+    padding: 5px;
+    
+}
+
+#startButton, #giveupButton {
+    width: 50%;
+    display: inline-block;
+}

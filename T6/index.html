@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!--
+Alumno: Antonio Manuel Montes Martínez
+Tema: T6 - AJAX, JSON, JQUERY
+Apartado: 1
+-->
+	
+<html>
+	<head>
+		<title>T6: Competiciones de fútbol. Trabajando con AJAX, jQuery y JSON</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="comp.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="title">
+				<h1>- FOOTBALL RESULTS -</h1>
+			</div>
+			<div id="selLiga">
+				<select id="ligas">
+				  <option value="PD">Primera División</option>
+				  <option value="PL">Premier League</option>
+				  <option value="BL1">Bundesliga</option>
+				  <option value="SA">Italian Serie A</option>
+				</select>
+			</div>
+			<div id="selJornada">
+				<input id="nJornada" type="number" min="1" max="38" value="1"/>
+			</div>
+			<div id="loadButton">
+				<button id="cargarJornada">Cargar Jornada</button>
+			</div>
+			<table id="tableRes">
+				<tr>
+					<th>HOME TEAM</th>
+					<th colspan="2">RESULTADO</th>
+					<th>AWAY TEAM</th>
+				</tr>
+			</table>
+			<div>
+				<h2>TOP SCORERS</h2>
+			</div>
+			<table id="tableScorers">
+				<tr>
+					<th>NAME</th>
+					<th>GOALS</th>
+					<th>TEAM</th>
+				</tr>
+			</table>
+		</div>
+		<div id="loading">
+			<p><img src="ajax-loader.gif" /> Please Wait</p>
+		</div>
+	</body>
+</html>

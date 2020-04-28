@@ -1,0 +1,52 @@
+html {
+	font-family:		"Calibri", Calibri;
+	background-color: 	#bbe2c1;
+}
+
+table {
+  font-family: 			arial, sans-serif;
+  border-collapse: 		collapse;
+  width: 				100%;
+}
+
+td, th {
+  border: 				1px solid black;
+  text-align: 			center;
+  padding: 				2px;
+}
+
+th {
+	background-color: 	#83c98e;
+}
+
+tr:nth-child(even) {
+  background-color: 	#dddddd;
+}
+
+h1, h2 {
+	margin: 			10px;
+	text-align: 		center;
+}
+
+#tableRes, #tableScorers {
+	margin-top: 		20px;
+}
+
+#contenedor {
+	width: 				1000px;
+	margin:				auto;
+	background-color: 	#caffd2;
+	padding: 			15px;
+	border: 			1px solid black;
+}
+
+#selLiga, #selJornada, #loadButton {
+	margin: 			10px;
+	text-align: 		center;
+}
+
+#loading {
+	width: 				100%;
+	margin: 			auto;
+	text-align: 		center;
+}
